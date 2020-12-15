@@ -25,7 +25,7 @@
             <a href="<?php echo base_url().'index.php/admin/add_edit_travelling/'.$data['id']; ?>"><img width="20px" height="20px" src="<?php echo base_url().'img/edit.png';?>"> Edit</a>
           </li>
           <li class="probootstrap-check">
-            <a href="<?php echo base_url().'index.php/admin/delete_travelling/'.$data['id']; ?>"><img width="20px" height="20px" src="<?php echo base_url().'img/delete.png';?>"> Hapus</a>
+            <a href="<?php echo base_url().'index.php/admin/delete_travelling/'.$data['id'].'/'.$data['gambar']; ?>"><img width="20px" height="20px" src="<?php echo base_url().'img/delete.png';?>"> Hapus</a>
           </li>
         </ul>
       </div>
@@ -43,7 +43,7 @@
             <a href="<?php echo base_url().'index.php/admin/add_edit_travelling/'.$data['id']; ?>"><img width="20px" height="20px" src="<?php echo base_url().'img/edit.png';?>"> Edit</a>
           </li>
           <li class="probootstrap-check">
-            <a href="<?php echo base_url().'index.php/admin/delete_travelling/'.$data['id']; ?>"><img width="20px" height="20px" src="<?php echo base_url().'img/delete.png';?>"> Hapus</a>
+            <a href="<?php echo base_url().'index.php/admin/delete_travelling/'.$data['id'].'/'.$data['gambar']; ?>"><img width="20px" height="20px" src="<?php echo base_url().'img/delete.png';?>"> Hapus</a>
           </li>
         </ul>
       </div>

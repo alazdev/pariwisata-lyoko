@@ -58,13 +58,23 @@ class admin extends CI_Controller{
 		$this->model_admin_travelling->add_edit();
 		redirect('admin','refresh');
 	}
-	public function delete_travelling($id){
+	public function delete_travelling($id, $gambar){
+		$path = BASEPATH.'../img/';
+		$get_file = $path.$gambar;
+		if(file_exists($get_file)){
+			unlink($get_file);
+		}
 		$this->model_admin_travelling->delete_travelling($id);
 		redirect('admin','refresh');
 	}
 
 	//coment
-	public function delete_comment($id){
+	public function delete_comment($id, $gambar){
+		$path = BASEPATH.'../img/';
+		$get_file = $path.$gambar;
+		if(file_exists($get_file)){
+			unlink($get_file);
+		}
 		$this->model_admin_comment->delete_comment($id);
 		redirect('admin','refresh');
 	}

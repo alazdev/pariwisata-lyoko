@@ -49,7 +49,7 @@
             <p><?php echo $data['comment']; ?>.</p>
           </blockquote>
           <p class="mb0">&mdash; <?php echo $data['by']; ?></p>
-          <p><a href="<?php echo base_url().'index.php/admin/delete_comment/'.$data['id'];?>"><img width="20px" height="20px" src="<?php echo base_url().'img/delete.png';?>"> Hapus</a></p>
+          <p><a href="<?php echo base_url().'index.php/admin/delete_comment/'.$data['id'].'/'.$data['foto'];?>"><img width="20px" height="20px" src="<?php echo base_url().'img/delete.png';?>"> Hapus</a></p>
         </div>
       </div>
       <?php if ($data['id']%2){ ?>
